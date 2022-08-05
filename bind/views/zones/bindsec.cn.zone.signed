@@ -1,0 +1,100 @@
+; File written on Fri Aug  5 11:18:57 2022
+; dnssec_signzone version 9.18.5
+bindsec.cn.		86400	IN SOA	bindsec.cn.bindsec.cn. admin.bindsec.cn. (
+					0          ; serial
+					86400      ; refresh (1 day)
+					3600       ; retry (1 hour)
+					604800     ; expire (1 week)
+					10800      ; minimum (3 hours)
+					)
+			86400	RRSIG	SOA 5 2 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					ROGF8pX5YjENeG09p3KQtNBtsraENmO+RapK
+					cmwyo1n607Z1b+kRodUQ3G1E3PRRRG/a9jew
+					/+2EmV5YaZcGZCwLbL6Hje26sMFGZRUeb7C5
+					dWfJz0eP87p6g395Etsl5TvbbAAphdcZ3Qmz
+					0N/WgQw6Map07wB+cDf787PdwG0= )
+			86400	NS	ns.bindsec.cn.
+			86400	RRSIG	NS 5 2 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					oYPxWiwSmtOOFOELZ5aC/WW/OAmB5bb+aQ49
+					pOYsurrjy4IwbEeb1dlJpf3hQ1kifoT12JI/
+					OulTTX8tfariU5An4kvsD9CGuofZ5/0Fl4Ec
+					8iO1gpXlmdDDJTKHpGOrdF/Zjr4nqUXNot3Y
+					kmY5lwVPcw2Rm7UXNJRJv4vmL44= )
+			86400	A	10.64.18.68
+			86400	RRSIG	A 5 2 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					KOuExK7wtW5fF8eSiPcYqK/uc6/BiUZaM4YF
+					235YngX8K+vodphqwAbtFq+kh0kwxCX2gSbr
+					y+rZvoo4WwkpPk/4Rvnotsq7zLNgeYSfH2EI
+					ZflFZBBkt4OQcLUqEpr/Qr5D5ySyjDfDbcx7
+					7XWuJzuWyhX1IOef5almMh67p1E= )
+			10800	NSEC	ns.bindsec.cn. A NS SOA RRSIG NSEC DNSKEY
+			10800	RRSIG	NSEC 5 2 10800 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					FcmsIZMdXZH+6kiVeU7sDXkErnZhYbikir8J
+					LM9qtk2BV1p/5S1dfqCpxpdLyHtjCnEkQKBv
+					rvmyeZ57+OU3xY7j1cpMDjMk9RK7i7ua8Rco
+					8nQNDkEtU4vXjJKtqchjSSTli5LdiDq0CL1h
+					NRnrxTB0jZfd80M8qkS6gD5s4fQ= )
+			86400	DNSKEY	256 3 5 (
+					AwEAAaQiEbEVgv/VWiHTkOVROCjrZt5U7MfD
+					3qRy6XYG4MUuqBhb3EZ7Hreu5hFk7jRJDSAX
+					3//mTpR/1aFCFMUVQEaKZDwdkAaziiPJMnzh
+					DvB+6lo065AzHZdooAmpbQGZhpLeUlr/xCk8
+					IL7+mySJfRMSxTgdjvEJXdUWTqsYbkeP
+					) ; ZSK; alg = RSASHA1 ; key id = 38991
+			86400	DNSKEY	257 3 5 (
+					AwEAAc+EdB1F2jtrCkz2tBKY4OMSN1gGz1at
+					0S5Ou3RYjrXQGwLwJmPOvAgH4cX/RtuDH/Xm
+					K873DLc2RA+weFaMIOU6oj0K/272DxxB7UGC
+					ZdgiljahkpDR8Xi5OwGe3px+YxXMLuZxggCk
+					2JixcToTo6SVWEksw9d5KVcPcC2dCuTx
+					) ; KSK; alg = RSASHA1 ; key id = 50497
+			86400	RRSIG	DNSKEY 5 2 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					YQln8Pr0e/mryXZqS/iSfbXGqsKTyTI0BJAJ
+					OYrep8VvRIG9xsURbI5jIff8kHW6V6DD398e
+					vspGtATTmeixhGMqODp9OtBe1pWoAiHrf2ch
+					OnlMoJatmR7zV2WANnBX8frqsRs4A1m17flO
+					0xZNywGT+z6BZTuestpJuMJ2Huk= )
+			86400	RRSIG	DNSKEY 5 2 86400 (
+					20220904021857 20220805021857 50497 bindsec.cn.
+					hCQ+CQTmD4XF98z+6Rk5Y+hQsVPGg78WW3up
+					Q2ugkSroE/S7LLhXSNqOv+QoJ7OoDNWG2pCl
+					e5hEsrdBpdgYEnXYNX0OlltQgFMWQFrH5m4q
+					65ciY9OCUVRqNA2FA6zTw/3KP0ThMdzoKgB3
+					LVgfQwfx7JcZn6NBjCEk4B6VhrQ= )
+ns.bindsec.cn.		86400	IN A	10.64.18.68
+			86400	RRSIG	A 5 3 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					KI9+bWER8RQabebsZ3KuRqTv7xg/MeauUp2E
+					Ja2VwDGr45L0zI5KoiNUTSVxS3US8btALbFN
+					0tEvAylp3IICzexJebHwrOwnz2182/tgrqWt
+					QYc3TYDCWiy9neTXopRUAWY6/B346i0qPxVu
+					IFulbrxnJH65tZ30mBpYcR1VOmY= )
+			10800	NSEC	www.bindsec.cn. A RRSIG NSEC
+			10800	RRSIG	NSEC 5 3 10800 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					dWwloZRsw25Kb0EkI0DJ9/gLj//SsaFH+WSP
+					KlbQnm+k1IsbHAfo8WI0vhFEyXOe0YSf7zsE
+					h7PHzo8lbLM1l5f1cHqIfId6plrLEUyT0eT2
+					iqrGddyqCPr3vvXVTMU1veDFPEKq/u7mJPf4
+					gmVQR/TkhjYVl5YysnOZ0Fn66/s= )
+www.bindsec.cn.		86400	IN A	10.64.18.68
+			86400	RRSIG	A 5 3 86400 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					h2TPkjes3T0zkvqr61U+mNcsLIhgSR7Rh30G
+					1STvCxoOUuAXC0S6wZUaQAfEb4l01NREmivR
+					VJlgv9Nk8zr9JMgAE5rK/lIGXXiQy2D59Y+M
+					1FQbPYlJHzFNviP3wPaCqwhtRK1pQ5Nfb8A+
+					mW/KSWb7BPdYTaCcKxpO6tVNpi8= )
+			10800	NSEC	bindsec.cn. A RRSIG NSEC
+			10800	RRSIG	NSEC 5 3 10800 (
+					20220904021857 20220805021857 38991 bindsec.cn.
+					W0FiN2M1Z2IT99qxlAnIZTAL96X60XAe+mlS
+					0L7QxvEcgDszAhiihE2eFEHe3JKSOI+1jbR3
+					/lHOSwCMR+b47ZOoqpO8Ws5g/cpOHqHD0NFj
+					Cqk4hHiiiLgptSVNwt/c5a0QPk3DkqBX7f6a
+					hfhUgV6MuBOvnm/uQWY1tR2Fnsc= )

@@ -1,0 +1,15 @@
+XX.XX$TTL 1D
+@   IN    SOA    bindsec.cn    admin.bindsec.cn. (
+        0       ; serial
+        1D      ; refresh
+        1H      ; retry
+        1W      ; expire
+        3H )    ; minimum
+
+    NS  ns.bindsec.cn.
+@       A   10.64.XX.XX
+ns      A   10.64.XX.XX
+www     A   10.64.XX.XX
+
+$INCLUDE "/opt/homebrew/etc/bind/views/dnssec_keys/Kbindsec.cn.+005+38991.key"
+$INCLUDE "/opt/homebrew/etc/bind/views/dnssec_keys/Kbindsec.cn.+005+50497.key"

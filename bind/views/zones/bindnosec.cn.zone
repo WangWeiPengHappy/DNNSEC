@@ -1,0 +1,12 @@
+$TTL 1D
+@   IN    SOA    bindnosec.cn    admin.bindnosec.cn. (
+        0       ; serial
+        1D      ; refresh
+        1H      ; retry
+        1W      ; expire
+        3H )    ; minimum
+
+    NS  ns.bindnosec.cn.
+@       A   10.64.XX.XX
+ns      A   10.64.XX.XX
+www     A   10.64.XX.XX
